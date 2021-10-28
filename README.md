@@ -1,6 +1,6 @@
 # productprocessor
 
-# Java Microservice as Docker Container connecting to Kafka docker container.
+Java Microservice as Docker Container connecting to Kafka docker container.
 
 # RUN kafka as docker container
 
