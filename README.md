@@ -19,4 +19,4 @@ Java Microservice as Docker Container connecting to Kafka docker container.
  
 # WHEN running in local please enable:
 
-<br />#- KAFKA_ADVERTISED_LISTENERS=PLAINTEXT://localhost:9092 and disable kafka:9092
+#- KAFKA_ADVERTISED_LISTENERS=PLAINTEXT://localhost:9092 and disable kafka:9092
