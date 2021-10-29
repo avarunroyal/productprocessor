@@ -17,6 +17,9 @@ Java Microservice as Docker Container connecting to Kafka docker container.
  $ docker network ls    (check for gateway of kafka) -- kafka_default
  <br /> $ docker run -p 8080:8080 --network=kafka_default -e "SPRING_PROFILES_ACTIVE=dev" -e kafka_bootstrap_servers=kafka --link=kafka devopsvarun/productprocessor:0.0.1-SNAPSHOT
  
+ <br />if using docker-compose file just enable productprocessor
+ <br />$ docker-compose up
+ 
 # WHEN running in local please enable:
 
 - KAFKA_ADVERTISED_HOST_NAME=localhost and disable kafka
