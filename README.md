@@ -19,4 +19,21 @@ Java Microservice as Docker Container connecting to Kafka docker container.
  
 # WHEN running in local please enable:
 
-#- KAFKA_ADVERTISED_LISTENERS=PLAINTEXT://localhost:9092 and disable kafka:9092
+- KAFKA_ADVERTISED_HOST_NAME=localhost and disable kafka
+
+# DEPLOY to GCP kubernetes
+
+Create gcloud cluster at https://console.cloud.google.com/ - Kubernets Engine -> cluster-1
+<br />$ gcloud container clusters get-credentials cluster-1 --zone us-central1-a --project #project-id#
+
+
+In Local download kompose-windows-amd64 and run:
+<br />$ kompose convert -> This will generate all the below files.
+
+
+Deploy using generated files in GCP
+
+
+$ kubectl apply -f zookeeper-deployment.yaml,zookeeper-service.yaml
+<br />$ kubectl apply -f kaka-deployment.yaml,kafka-service.yaml
+<br />$ kubectl apply -f productprocessor-deployment.yaml,productprocessor-service.yaml
