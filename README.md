@@ -35,5 +35,5 @@ Deploy using generated files in GCP
 
 
 $ kubectl apply -f zookeeper-deployment.yaml,zookeeper-service.yaml
-<br />$ kubectl apply -f kaka-deployment.yaml,kafka-service.yaml
+<br />$ kubectl apply -f kafka-deployment.yaml,kafka-service.yaml
 <br />$ kubectl apply -f productprocessor-deployment.yaml,productprocessor-service.yaml
